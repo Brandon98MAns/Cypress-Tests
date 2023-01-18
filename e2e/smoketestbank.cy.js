@@ -33,7 +33,7 @@ describe("Test suite - conjunto de pruebas", () => {
 
     //Agregar .only para que Cypress corra unicamente la prueba seleccionada
     it("Visualizar actualizacion de grafico", () => {
-
+        //Aca usamos localizadores por .clase y por #id
         cy.visit("http://zero.webappsecurity.com")
         cy.get('#signin_button').click()
         cy.get('#user_login').type("username")
@@ -45,6 +45,4 @@ describe("Test suite - conjunto de pruebas", () => {
         cy.get('#ext-sprite-1259').should("not.visible")
 
     })
-
-
 })
