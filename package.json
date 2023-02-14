@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "First steps Cypress",
+  "main": "index.js",
+  "scripts": {
+    "prueba-chrome": "cypress run --spec cypress/e2e/smoketestbank.cy.js --browser chrome",
+    "create-consumer": "cypress run --spec cypress/e2e/consumer-creation.cy.js --browser chrome"
+  },
+  "author": "Brandon Mansfield",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^11.1.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
